@@ -34,7 +34,11 @@ export const Cards = React.memo(({card}: CardsPropsType) => {
                 <th>
                     <span className={styles.spanHeader}>Логотип хозяев</span>
                 </th>
-                <td>лого</td>
+                <td>
+                    <img alt=''
+                         src={`https://footballista.ru/api/img/logos/${card.teamHome.logo}-min.png?logoId=${card.teamHome.logoId}`}
+                    />
+                </td>
             </tr>
             <tr>
                 <th>
@@ -46,7 +50,11 @@ export const Cards = React.memo(({card}: CardsPropsType) => {
                 <th>
                     <span className={styles.spanHeader}>Логотип гостей</span>
                 </th>
-                <td>лого</td>
+                <td>
+                    <img alt=''
+                         src={`https://footballista.ru/api/img/logos/${card.teamAway.logo}-min.png?logoId=${card.teamAway.logoId}`}
+                    />
+                </td>
             </tr>
             <tr>
                 <th>

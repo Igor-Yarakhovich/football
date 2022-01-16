@@ -19,8 +19,6 @@ function App() {
         dispatch(fetchCalendarTC())
     }, [dispatch])
 
-
-
     const onclickHandler = () => {
         dispatch(updateCalendarTC(offset))
         setOffset(offset + 10)
