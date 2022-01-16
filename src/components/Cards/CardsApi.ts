@@ -3,9 +3,6 @@ import {dataType} from "./CardsReducer";
 
 export const instance = axios.create({
     baseURL: 'https://footballista.ru/api/',
-    headers: {
-        'Access-Control-Allow-Credentials': 'true'
-    }
 })
 
 export const cardsApi = {

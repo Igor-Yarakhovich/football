@@ -23,7 +23,7 @@ function App() {
 
     const onclickHandler = () => {
         dispatch(updateCalendarTC(offset))
-        setOffset(offset + 1)
+        setOffset(offset + 10)
     }
 
     const filteredItems = useMemo(() => {
